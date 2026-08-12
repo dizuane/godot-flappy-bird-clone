@@ -26,3 +26,7 @@ The overall goal is to start learning and using Godot for game development.
 - UI and Canvas
 - Data persistence to file
 - Physics nodes
+
+## Assets 
+- [Glitch Garden SVGs - OpenGameArt.Org](https://opengameart.org/content/glitch-svgs "Glitch Garden SVGs - OpenGameArt.Org")
+- [Titan One Font - Google Fonts](https://fonts.google.com/?preview.script=Latin&query=Titan+One "Titan One Font - Google Fonts")

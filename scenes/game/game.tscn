@@ -1,3 +1,13 @@
 [gd_scene format=3 uid="uid://bn8y6p223ccrm"]
 
+[ext_resource type="Texture2D" uid="uid://cej8r1g1tuh0y" path="res://assets/background/Parallax0.png" id="1_sul5r"]
+[ext_resource type="PackedScene" uid="uid://c7ks1wy6ywdka" path="res://scenes/tappy/tappy.tscn" id="2_7h61r"]
+
 [node name="Game" type="Node" unique_id=478392835]
+
+[node name="Parallax0" type="Sprite2D" parent="." unique_id=1971235588]
+position = Vector2(262, 840)
+texture = ExtResource("1_sul5r")
+
+[node name="Tappy" parent="." unique_id=483095 instance=ExtResource("2_7h61r")]
+position = Vector2(211, 324)
