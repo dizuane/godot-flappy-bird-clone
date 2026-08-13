@@ -19,6 +19,7 @@ func _on_pipe_body_entered(body: Node2D) -> void:
 	if body is Tappy: body.die()
 
 func _on_laser_entered(_body: Node2D) -> void:
+	ScoreManager.add_point()
 	score_sound.play()
 
 
@@ -28,6 +29,7 @@ func _ready() -> void:
 	laser.body_entered.connect(_on_laser_entered, CONNECT_ONE_SHOT) # one shot to prevent accidently double scoring
 	upper.body_entered.connect(_on_pipe_body_entered)
 	lower.body_entered.connect(_on_pipe_body_entered)
+
 
 
 func _physics_process(delta: float) -> void:
