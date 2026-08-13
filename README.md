@@ -14,7 +14,8 @@ The overall goal is to start learning and using Godot for game development.
 - Parallax scrolling backgrounds
 - Full gameplay loop
 
-### Learning Disciplines 
+### Learning Goals
+- Parallax
 - Asset handling
 - Scenes
 - Nodes
