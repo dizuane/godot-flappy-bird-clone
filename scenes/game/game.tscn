@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bn8y6p223ccrm"]
 
+[ext_resource type="Script" uid="uid://c0i2ej18nxuqe" path="res://scenes/game/game.gd" id="1_0sr1o"]
 [ext_resource type="Texture2D" uid="uid://cej8r1g1tuh0y" path="res://assets/background/Parallax0.png" id="1_sul5r"]
 [ext_resource type="PackedScene" uid="uid://c7ks1wy6ywdka" path="res://scenes/tappy/tappy.tscn" id="2_7h61r"]
 
@@ -11,6 +12,7 @@ distance = -15.0
 distance = 34.0
 
 [node name="Game" type="Node" unique_id=478392835]
+script = ExtResource("1_0sr1o")
 
 [node name="Parallax0" type="Sprite2D" parent="." unique_id=1971235588]
 z_index = 10
@@ -29,3 +31,15 @@ shape = SubResource("WorldBoundaryShape2D_7h61r")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1147465526]
 position = Vector2(235.5, 853)
 shape = SubResource("WorldBoundaryShape2D_0sr1o")
+
+[node name="UpperSpawn" type="Marker2D" parent="." unique_id=1275920687]
+position = Vector2(580, 185)
+
+[node name="LowerSpawn" type="Marker2D" parent="." unique_id=2011811268]
+position = Vector2(580, 510)
+
+[node name="SpawnTimer" type="Timer" parent="." unique_id=150507630]
+wait_time = 1.2
+autostart = true
+
+[node name="PipesHolder" type="Node" parent="." unique_id=852213439]
