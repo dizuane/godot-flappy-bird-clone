@@ -13,6 +13,7 @@ var _jumped: bool = false
 
 
 func die() -> void:
+	SignalHub.emit_tappy_died()
 	get_tree().paused = true
 
 

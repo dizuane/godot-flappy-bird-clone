@@ -3,8 +3,7 @@ extends Area2D
 
 
 func _on_laser_entered(_body: Node2D) -> void:
-	print("Point scored")
-
+	print("Scored point")
 
 
 func _ready() -> void:

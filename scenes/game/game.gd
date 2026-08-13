@@ -18,7 +18,6 @@ func _spawn_pipes() -> void:
 	pipes_holder.add_child(new_pipes)
 
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_timer.timeout.connect(_spawn_pipes)

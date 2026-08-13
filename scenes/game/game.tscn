@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c0i2ej18nxuqe" path="res://scenes/game/game.gd" id="1_0sr1o"]
 [ext_resource type="Texture2D" uid="uid://cej8r1g1tuh0y" path="res://assets/background/Parallax0.png" id="1_sul5r"]
 [ext_resource type="PackedScene" uid="uid://c7ks1wy6ywdka" path="res://scenes/tappy/tappy.tscn" id="2_7h61r"]
+[ext_resource type="PackedScene" uid="uid://bhww7eemvtl1o" path="res://scenes/game_ui/game_ui.tscn" id="4_kelw5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7h61r"]
 normal = Vector2(0, 1)
@@ -44,3 +45,7 @@ wait_time = 1.2
 autostart = true
 
 [node name="PipesHolder" type="Node" parent="." unique_id=852213439]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=21105697]
+
+[node name="GameUI" parent="CanvasLayer" unique_id=205884384 instance=ExtResource("4_kelw5")]

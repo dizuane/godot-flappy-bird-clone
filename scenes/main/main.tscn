@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://kfony601y874"]
 
 [ext_resource type="Texture2D" uid="uid://7extd0hfhbaj" path="res://assets/background/MainScreen.png" id="1_hyk8p"]
+[ext_resource type="Script" uid="uid://dxhcsrnth5hp2" path="res://scenes/main/main.gd" id="1_ow5a4"]
 [ext_resource type="LabelSettings" uid="uid://c3ewk7nktskj5" path="res://resources/title_label_red.tres" id="2_iuonh"]
 [ext_resource type="LabelSettings" uid="uid://u0tvk1siayfq" path="res://resources/high_score.tres" id="3_k2fmo"]
 [ext_resource type="LabelSettings" uid="uid://cvswi0w2c5m3r" path="res://resources/press_jump.tres" id="4_l3cfh"]
@@ -51,6 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ow5a4")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=512245710]
 layout_mode = 1
@@ -104,7 +106,7 @@ label_settings = ExtResource("4_l3cfh")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Music" type="AudioStreamPlayer" parent="." unique_id=523557178]
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=523557178]
 stream = ExtResource("5_6q06x")
 volume_db = -8.0
 autoplay = true
