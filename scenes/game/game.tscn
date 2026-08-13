@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c0i2ej18nxuqe" path="res://scenes/game/game.gd" id="1_0sr1o"]
 [ext_resource type="Texture2D" uid="uid://cej8r1g1tuh0y" path="res://assets/background/Parallax0.png" id="1_sul5r"]
 [ext_resource type="PackedScene" uid="uid://c7ks1wy6ywdka" path="res://scenes/tappy/tappy.tscn" id="2_7h61r"]
+[ext_resource type="PackedScene" uid="uid://b638qi1s8t32w" path="res://scenes/scrolling_bg/scrolling_bg.tscn" id="2_lfrn8"]
 [ext_resource type="PackedScene" uid="uid://bhww7eemvtl1o" path="res://scenes/game_ui/game_ui.tscn" id="4_kelw5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7h61r"]
@@ -15,7 +16,10 @@ distance = 34.0
 [node name="Game" type="Node" unique_id=478392835]
 script = ExtResource("1_0sr1o")
 
+[node name="ScrollingBG" parent="." unique_id=1886912437 instance=ExtResource("2_lfrn8")]
+
 [node name="Parallax0" type="Sprite2D" parent="." unique_id=1971235588]
+visible = false
 z_index = 10
 position = Vector2(262, 840)
 texture = ExtResource("1_sul5r")
