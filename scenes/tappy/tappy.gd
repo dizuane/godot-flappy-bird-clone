@@ -12,6 +12,10 @@ var _gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 var _jumped: bool = false
 
 
+func die() -> void:
+	get_tree().paused = true
+
+
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("fly"): _jumped = true
 
@@ -32,3 +36,4 @@ func _physics_process(delta: float) -> void:
 		animation_player.play("fly")
 	
 	move_and_slide()
+	if is_on_floor(): die()

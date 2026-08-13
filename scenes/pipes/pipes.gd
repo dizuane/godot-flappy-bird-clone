@@ -14,9 +14,7 @@ func _on_screen_exited() -> void:
 
 
 func _on_pipe_body_entered(body: Node2D) -> void:
-	print("_on_pipe_body_entered: %s %s" % [
-		name, body.name,
-	])
+	if body is Tappy: body.die()
 
 
 # Called when the node enters the scene tree for the first time.
