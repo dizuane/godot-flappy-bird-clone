@@ -3,9 +3,21 @@
 [ext_resource type="LabelSettings" uid="uid://u0tvk1siayfq" path="res://resources/high_score.tres" id="1_1i64n"]
 [ext_resource type="Script" uid="uid://cm4cvpxx6mb4r" path="res://scenes/game_ui/game_ui.gd" id="1_najyh"]
 [ext_resource type="LabelSettings" uid="uid://cvswi0w2c5m3r" path="res://resources/press_jump.tres" id="2_najyh"]
+[ext_resource type="FontFile" uid="uid://cdnqneycsds8y" path="res://assets/fonts/TitanOne-Regular.ttf" id="4_2cwxn"]
+[ext_resource type="AudioStream" uid="uid://cu3uai0qkd8yy" path="res://assets/audio/game_over.wav" id="5_hk0ve"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hk0ve"]
+font = ExtResource("4_2cwxn")
+font_size = 52
+font_color = Color(0.972549, 0.56078434, 0.73333335, 1)
+outline_size = 6
+outline_color = Color(0.28235295, 0.25490198, 1, 1)
+shadow_size = 7
+shadow_color = Color(0, 0, 0, 0.7137255)
+shadow_offset = Vector2(2, 2)
 
 [node name="GameUI" type="Control" unique_id=205884384]
-process_mode = 2
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,3 +52,17 @@ text = "GAME OVER"
 label_settings = ExtResource("2_najyh")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="PressJumpLabel" type="Label" parent="MarginContainer" unique_id=706868733]
+visible = false
+layout_mode = 2
+text = "PRESS JUMP"
+label_settings = SubResource("LabelSettings_hk0ve")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sound" type="AudioStreamPlayer" parent="." unique_id=306193803]
+stream = ExtResource("5_hk0ve")
+
+[node name="LabelChangeTimer" type="Timer" parent="." unique_id=104152919]
+wait_time = 2.0
