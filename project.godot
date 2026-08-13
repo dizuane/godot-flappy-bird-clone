@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="flappy-bird-clone"
-run/main_scene="res://scenes/game/game.tscn"
+run/main_scene="uid://kfony601y874"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://e7g3dt8mao50"
 

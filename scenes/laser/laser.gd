@@ -2,7 +2,7 @@ class_name Laser
 extends Area2D
 
 
-func _on_laser_entered(body: Node2D) -> void:
+func _on_laser_entered(_body: Node2D) -> void:
 	print("Point scored")
 
 
