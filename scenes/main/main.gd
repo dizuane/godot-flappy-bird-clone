@@ -12,4 +12,3 @@ func _unhandled_input(event: InputEvent) -> void:
 func _ready() -> void:
 	get_tree().paused = false
 	high_score_label.text = "%04d" % ScoreManager.high_score
-	ScoreManager.score = 0

@@ -19,10 +19,7 @@ func _on_point_scored(score: int) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if (
-		event.is_action_pressed("test") or
-		(event.is_action_pressed("fly") and press_jump_label.visible)
-	):
+	if event.is_action_pressed("fly") and press_jump_label.visible:
 		GameManager.load_main_screen()
 
 
