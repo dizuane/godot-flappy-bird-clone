@@ -32,7 +32,10 @@ jobs:
       - name: Make executable
         run: |
           chmod +x build/flappy-bird-clone/flappy-bird-clone.x86_64
-          chmod +x build/flappy-bird-clone/flappy-bird-clone.sh
+
+          if [ -f build/flappy-bird-clone/flappy-bird-clone.sh ]; then
+            chmod +x build/flappy-bird-clone/flappy-bird-clone.sh
+          fi
 
       - name: Create ZIP
         run: |
